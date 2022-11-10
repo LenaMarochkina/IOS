@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)file:///Users/ondra/teaching/ios/ios-22-1/zadani_reseni/README.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="generator" content="pandoc">
+      
+      
+      <title>1. Úloha IOS (2022)</title>
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="./ios22-projekt-1_files/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+      <!-- Font-awesome -->
+      <link rel="stylesheet" href="./ios22-projekt-1_files/font-awesome.min.css">
+      <!-- Styles -->
+      <link rel="stylesheet" href="./ios22-projekt-1_files/styles.css">
+            <!-- Add favicon here -->
+            <!-- Add site-verifications here -->
+         <style type="text/css">.CtxtMenu_InfoClose {  top:.2em; right:.2em;}
+.CtxtMenu_InfoContent {  overflow:auto; text-align:left; font-size:80%;  padding:.4em .6em; border:1px inset; margin:1em 0px;  max-height:20em; max-width:30em; background-color:#EEEEEE;  white-space:normal;}
+.CtxtMenu_Info.CtxtMenu_MousePost {outline:none;}
+.CtxtMenu_Info {  position:fixed; left:50%; width:auto; text-align:center;  border:3px outset; padding:1em 2em; background-color:#DDDDDD;  color:black;  cursor:default; font-family:message-box; font-size:120%;  font-style:normal; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 15px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius:15px;               /* Safari and Chrome */  -moz-border-radius:15px;                  /* Firefox */  -khtml-border-radius:15px;                /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */  filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color="gray", Positive="true"); /* IE */}
+</style><style type="text/css">.CtxtMenu_MenuClose {  position:absolute;  cursor:pointer;  display:inline-block;  border:2px solid #AAA;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  font-family: "Courier New", Courier;  font-size:24px;  color:#F0F0F0}
+.CtxtMenu_MenuClose span {  display:block; background-color:#AAA; border:1.5px solid;  border-radius:18px;  -webkit-border-radius: 18px;             /* Safari and Chrome */  -moz-border-radius: 18px;                /* Firefox */  -khtml-border-radius: 18px;              /* Konqueror */  line-height:0;  padding:8px 0 6px     /* may need to be browser-specific */}
+.CtxtMenu_MenuClose:hover {  color:white!important;  border:2px solid #CCC!important}
+.CtxtMenu_MenuClose:hover span {  background-color:#CCC!important}
+.CtxtMenu_MenuClose:hover:focus {  outline:none}
+</style><style type="text/css">.CtxtMenu_Menu {  position:absolute;  background-color:white;  color:black;  width:auto; padding:5px 0px;  border:1px solid #CCCCCC; margin:0; cursor:default;  font: menu; text-align:left; text-indent:0; text-transform:none;  line-height:normal; letter-spacing:normal; word-spacing:normal;  word-wrap:normal; white-space:nowrap; float:none; z-index:201;  border-radius: 5px;                     /* Opera 10.5 and IE9 */  -webkit-border-radius: 5px;             /* Safari and Chrome */  -moz-border-radius: 5px;                /* Firefox */  -khtml-border-radius: 5px;              /* Konqueror */  box-shadow:0px 10px 20px #808080;         /* Opera 10.5 and IE9 */  -webkit-box-shadow:0px 10px 20px #808080; /* Safari 3 & Chrome */  -moz-box-shadow:0px 10px 20px #808080;    /* Forefox 3.5 */  -khtml-box-shadow:0px 10px 20px #808080;  /* Konqueror */}
+.CtxtMenu_MenuItem {  padding: 1px 2em;  background:transparent;}
+.CtxtMenu_MenuArrow {  position:absolute; right:.5em; padding-top:.25em; color:#666666;  font-family: null; font-size: .75em}
+.CtxtMenu_MenuActive .CtxtMenu_MenuArrow {color:white}
+.CtxtMenu_MenuArrow.CtxtMenu_RTL {left:.5em; right:auto}
+.CtxtMenu_MenuCheck {  position:absolute; left:.7em;  font-family: null}
+.CtxtMenu_MenuCheck.CtxtMenu_RTL { right:.7em; left:auto }
+.CtxtMenu_MenuRadioCheck {  position:absolute; left: .7em;}
+.CtxtMenu_MenuRadioCheck.CtxtMenu_RTL {  right: .7em; left:auto}
+.CtxtMenu_MenuInputBox {  padding-left: 1em; right:.5em; color:#666666;  font-family: null;}
+.CtxtMenu_MenuInputBox.CtxtMenu_RTL {  left: .1em;}
+.CtxtMenu_MenuComboBox {  left:.1em; padding-bottom:.5em;}
+.CtxtMenu_MenuSlider {  left: .1em;}
+.CtxtMenu_SliderValue {  position:absolute; right:.1em; padding-top:.25em; color:#333333;  font-size: .75em}
+.CtxtMenu_SliderBar {  outline: none; background: #d3d3d3}
+.CtxtMenu_MenuLabel {  padding: 1px 2em 3px 1.33em;  font-style:italic}
+.CtxtMenu_MenuRule {  border-top: 1px solid #DDDDDD;  margin: 4px 3px;}
+.CtxtMenu_MenuDisabled {  color:GrayText}
+.CtxtMenu_MenuActive {  background-color: #606872;  color: white;}
+.CtxtMenu_MenuDisabled:focus {  background-color: #E8E8E8}
+.CtxtMenu_MenuLabel:focus {  background-color: #E8E8E8}
+.CtxtMenu_ContextMenu:focus {  outline:none}
+.CtxtMenu_ContextMenu .CtxtMenu_MenuItem:focus {  outline:none}
+.CtxtMenu_SelectionMenu {  position:relative; float:left;  border-bottom: none; -webkit-box-shadow:none; -webkit-border-radius:0px; }
+.CtxtMenu_SelectionItem {  padding-right: 1em;}
+.CtxtMenu_Selection {  right: 40%; width:50%; }
+.CtxtMenu_SelectionBox {  padding: 0em; max-height:20em; max-width: none;  background-color:#FFFFFF;}
+.CtxtMenu_SelectionDivider {  clear: both; border-top: 2px solid #000000;}
+.CtxtMenu_Menu .CtxtMenu_MenuClose {  top:-10px; left:-10px}
+</style><style id="MJX-CHTML-styles">
+mjx-container[jax="CHTML"] {
+  line-height: 0;
+}
+
+mjx-container [space="1"] {
+  margin-left: .111em;
+}
+
+mjx-container [space="2"] {
+  margin-left: .167em;
+}
+
+mjx-container [space="3"] {
+  margin-left: .222em;
+}
+
+mjx-container [space="4"] {
+  margin-left: .278em;
+}
+
+mjx-container [space="5"] {
+  margin-left: .333em;
+}
+
+mjx-container [rspace="1"] {
+  margin-right: .111em;
+}
+
+mjx-container [rspace="2"] {
+  margin-right: .167em;
+}
+
+mjx-container [rspace="3"] {
+  margin-right: .222em;
+}
+
+mjx-container [rspace="4"] {
+  margin-right: .278em;
+}
+
+mjx-container [rspace="5"] {
+  margin-right: .333em;
+}
+
+mjx-container [size="s"] {
+  font-size: 70.7%;
+}
+
+mjx-container [size="ss"] {
+  font-size: 50%;
+}
+
+mjx-container [size="Tn"] {
+  font-size: 60%;
+}
+
+mjx-container [size="sm"] {
+  font-size: 85%;
+}
+
+mjx-container [size="lg"] {
+  font-size: 120%;
+}
+
+mjx-container [size="Lg"] {
+  font-size: 144%;
+}
+
+mjx-container [size="LG"] {
+  font-size: 173%;
+}
+
+mjx-container [size="hg"] {
+  font-size: 207%;
+}
+
+mjx-container [size="HG"] {
+  font-size: 249%;
+}
+
+mjx-container [width="full"] {
+  width: 100%;
+}
+
+mjx-box {
+  display: inline-block;
+}
+
+mjx-block {
+  display: block;
+}
+
+mjx-itable {
+  display: inline-table;
+}
+
+mjx-row {
+  display: table-row;
+}
+
+mjx-row > * {
+  display: table-cell;
+}
+
+mjx-mtext {
+  display: inline-block;
+}
+
+mjx-mstyle {
+  display: inline-block;
+}
+
+mjx-merror {
+  display: inline-block;
+  color: red;
+  background-color: yellow;
+}
+
+mjx-mphantom {
+  visibility: hidden;
+}
+
+_::-webkit-full-page-media, _:future, :root mjx-container {
+  will-change: opacity;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-c::before {
+  display: block;
+  width: 0;
+}
+
+.MJX-TEX {
+  font-family: MJXZERO, MJXTEX;
+}
+
+.TEX-B {
+  font-family: MJXZERO, MJXTEX-B;
+}
+
+.TEX-I {
+  font-family: MJXZERO, MJXTEX-I;
+}
+
+.TEX-MI {
+  font-family: MJXZERO, MJXTEX-MI;
+}
+
+.TEX-BI {
+  font-family: MJXZERO, MJXTEX-BI;
+}
+
+.TEX-S1 {
+  font-family: MJXZERO, MJXTEX-S1;
+}
+
+.TEX-S2 {
+  font-family: MJXZERO, MJXTEX-S2;
+}
+
+.TEX-S3 {
+  font-family: MJXZERO, MJXTEX-S3;
+}
+
+.TEX-S4 {
+  font-family: MJXZERO, MJXTEX-S4;
+}
+
+.TEX-A {
+  font-family: MJXZERO, MJXTEX-A;
+}
+
+.TEX-C {
+  font-family: MJXZERO, MJXTEX-C;
+}
+
+.TEX-CB {
+  font-family: MJXZERO, MJXTEX-CB;
+}
+
+.TEX-FR {
+  font-family: MJXZERO, MJXTEX-FR;
+}
+
+.TEX-FRB {
+  font-family: MJXZERO, MJXTEX-FRB;
+}
+
+.TEX-SS {
+  font-family: MJXZERO, MJXTEX-SS;
+}
+
+.TEX-SSB {
+  font-family: MJXZERO, MJXTEX-SSB;
+}
+
+.TEX-SSI {
+  font-family: MJXZERO, MJXTEX-SSI;
+}
+
+.TEX-SC {
+  font-family: MJXZERO, MJXTEX-SC;
+}
+
+.TEX-T {
+  font-family: MJXZERO, MJXTEX-T;
+}
+
+.TEX-V {
+  font-family: MJXZERO, MJXTEX-V;
+}
+
+.TEX-VB {
+  font-family: MJXZERO, MJXTEX-VB;
+}
+
+mjx-stretchy-v mjx-c, mjx-stretchy-h mjx-c {
+  font-family: MJXZERO, MJXTEX-S1, MJXTEX-S4, MJXTEX, MJXTEX-A ! important;
+}
+
+@font-face /* 0 */ {
+  font-family: MJXZERO;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Zero.woff") format("woff");
+}
+
+@font-face /* 1 */ {
+  font-family: MJXTEX;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Regular.woff") format("woff");
+}
+
+@font-face /* 2 */ {
+  font-family: MJXTEX-B;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Bold.woff") format("woff");
+}
+
+@font-face /* 3 */ {
+  font-family: MJXTEX-I;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-Italic.woff") format("woff");
+}
+
+@font-face /* 4 */ {
+  font-family: MJXTEX-MI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Main-Italic.woff") format("woff");
+}
+
+@font-face /* 5 */ {
+  font-family: MJXTEX-BI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Math-BoldItalic.woff") format("woff");
+}
+
+@font-face /* 6 */ {
+  font-family: MJXTEX-S1;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size1-Regular.woff") format("woff");
+}
+
+@font-face /* 7 */ {
+  font-family: MJXTEX-S2;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size2-Regular.woff") format("woff");
+}
+
+@font-face /* 8 */ {
+  font-family: MJXTEX-S3;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size3-Regular.woff") format("woff");
+}
+
+@font-face /* 9 */ {
+  font-family: MJXTEX-S4;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Size4-Regular.woff") format("woff");
+}
+
+@font-face /* 10 */ {
+  font-family: MJXTEX-A;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_AMS-Regular.woff") format("woff");
+}
+
+@font-face /* 11 */ {
+  font-family: MJXTEX-C;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Regular.woff") format("woff");
+}
+
+@font-face /* 12 */ {
+  font-family: MJXTEX-CB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Calligraphic-Bold.woff") format("woff");
+}
+
+@font-face /* 13 */ {
+  font-family: MJXTEX-FR;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Regular.woff") format("woff");
+}
+
+@font-face /* 14 */ {
+  font-family: MJXTEX-FRB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Fraktur-Bold.woff") format("woff");
+}
+
+@font-face /* 15 */ {
+  font-family: MJXTEX-SS;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Regular.woff") format("woff");
+}
+
+@font-face /* 16 */ {
+  font-family: MJXTEX-SSB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Bold.woff") format("woff");
+}
+
+@font-face /* 17 */ {
+  font-family: MJXTEX-SSI;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_SansSerif-Italic.woff") format("woff");
+}
+
+@font-face /* 18 */ {
+  font-family: MJXTEX-SC;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Script-Regular.woff") format("woff");
+}
+
+@font-face /* 19 */ {
+  font-family: MJXTEX-T;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Typewriter-Regular.woff") format("woff");
+}
+
+@font-face /* 20 */ {
+  font-family: MJXTEX-V;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Regular.woff") format("woff");
+}
+
+@font-face /* 21 */ {
+  font-family: MJXTEX-VB;
+  src: url("https://cdn.jsdelivr.net/npm/mathjax@3/es5/output/chtml/fonts/woff-v2/MathJax_Vector-Bold.woff") format("woff");
+}
+</style></head>
+   <body>
+            <div class="container">
+         <h1 class="title">1. Úloha IOS (2022)</h1>
+                  <div class="row">
+            <div class="col-xl-10"><h1 id="popis-úlohy">Popis úlohy</h1>
+<p>Cílem úlohy je vytvořit shellový skript pro analýzu záznamů osob s
+prokázanou nákazou koronavirem způsobujícím onemocnění COVID-19 na území
+České republiky. Skript bude filtrovat záznamy a poskytovat základní
+statistiky podle zadání uživatele.</p>
+<h1 id="specifikace-rozhraní-skriptu">Specifikace rozhraní skriptu</h1>
+<p><strong>JMÉNO</strong></p>
+<ul>
+<li><code>corona</code> — analyzátor záznamů osob s prokázanou nákazou
+koronavirem způsobujícím onemocnění COVID-19</li>
+</ul>
+<p><strong>POUŽITÍ</strong></p>
+<ul>
+<li><code>corona [-h] [FILTERS] [COMMAND] [LOG [LOG2 [...]]</code></li>
+</ul>
+<p><strong>VOLBY</strong></p>
+<ul>
+<li><code>COMMAND</code> může být jeden z:
+<ul>
+<li><code>infected</code> — spočítá počet nakažených.</li>
+<li><code>merge</code> — sloučí několik souborů se záznamy do jednoho,
+zachovávající původní pořadí (hlavička bude ve výstupu jen jednou).</li>
+<li><code>gender</code> — vypíše počet nakažených pro jednotlivá
+pohlaví.</li>
+<li><code>age</code> — vypíše statistiku počtu nakažených osob dle věku
+(bližší popis je níže).</li>
+<li><code>daily</code> — vypíše statistiku nakažených osob pro
+jednotlivé dny.</li>
+<li><code>monthly</code> — vypíše statistiku nakažených osob pro
+jednotlivé měsíce.</li>
+<li><code>yearly</code> — vypíše statistiku nakažených osob pro
+jednotlivé roky.</li>
+<li><code>countries</code> — vypíše statistiku nakažených osob pro
+jednotlivé země nákazy (bez ČR, tj. kódu <code>CZ</code>).</li>
+<li><code>districts</code> — vypíše statistiku nakažených osob pro
+jednotlivé okresy.</li>
+<li><code>regions</code> — vypíše statistiku nakažených osob pro
+jednotlivé kraje.</li>
+</ul></li>
+<li><code>FILTERS</code> může být kombinace následujících (každý
+maximálně jednou):
+<ul>
+<li><code>-a DATETIME</code> — after: jsou uvažovány pouze záznamy PO
+tomto datu (včetně tohoto data). <code>DATETIME</code> je formátu
+<code>YYYY-MM-DD</code>.</li>
+<li><code>-b DATETIME</code> — before: jsou uvažovány pouze záznamy PŘED
+tímto datem (včetně tohoto data).</li>
+<li><code>-g GENDER</code> — jsou uvažovány pouze záznamy nakažených
+osob daného pohlaví. <code>GENDER</code> může být <code>M</code> (muži)
+nebo <code>Z</code> (ženy).</li>
+<li><code>-s [WIDTH]</code> u příkazů <code>gender</code>,
+<code>age</code>, <code>daily</code>, <code>monthly</code>,
+<code>yearly</code>, <code>countries</code>, <code>districts</code> a
+<code>regions</code> vypisuje data ne číselně, ale graficky v podobě
+histogramů. Nepovinný parametr <code>WIDTH</code> nastavuje šířku
+histogramů, tedy délku nejdelšího řádku, na <code>WIDTH</code>. Tedy,
+<code>WIDTH</code> musí být kladné celé číslo. Pokud není parametr
+<code>WIDTH</code> uveden, řídí se šířky řádků požadavky uvedenými
+níže.</li>
+<li>(<strong>nepovinný, viz níže</strong>) <code>-d DISTRICT_FILE</code>
+— pro příkaz <code>districts</code> vypisuje místo <a href="https://www.czso.cz/csu/rso/okresy_nuts4">LAU 1 kódu</a> okresu
+jeho jméno. Mapování kódů na jména je v souboru
+<code>DISTRICT_FILE</code></li>
+<li>(<strong>nepovinný, viz níže</strong>) <code>-r REGIONS_FILE</code>
+— pro příkaz <code>regions</code> vypisuje místo <a href="https://www.czso.cz/csu/rso/kraje_nuts3">NUTS 3 kódu</a> kraje
+jeho jméno. Mapování kódů na jména je v souboru
+<code>REGIONS_FILE</code></li>
+</ul></li>
+<li><code>-h</code> — vypíše nápovědu s krátkým popisem každého příkazu
+a přepínače.</li>
+</ul>
+<h1 id="popis">Popis</h1>
+<ol type="1">
+<li>Skript filtruje záznamy osob s prokázanou nákazou koronavirem
+způsobujícím onemocnění COVID-19. Pokud je skriptu zadán také příkaz,
+nad filtrovanými záznamy daný příkaz provede. Pokud příkaz zadán není,
+implicitně se použije příkaz <code>merge</code>.</li>
+<li>Pokud skript nedostane ani filtr ani příkaz, opisuje záznamy na
+standardní výstup.</li>
+<li>Skript umí zpracovat i záznamy komprimované pomocí nástrojů
+<code>gzip</code> a <code>bzip2</code> (v případě, že název souboru
+končí <code>.gz</code> resp. <code>.bz2</code>).</li>
+<li>V případě, že skript na příkazové řádce nedostane soubory se záznamy
+(<code>LOG</code>, <code>LOG2</code>, …), očekává záznamy na standardním
+vstupu.</li>
+<li>Grafy jsou vykresleny pomocí ASCII a jsou otočené doprava. Hodnota
+řádku je vyobrazena posloupností znaku mřížky <code>#</code>.</li>
+</ol>
+<h1 id="podrobné-požadavky">Podrobné požadavky</h1>
+<ol type="1">
+<li><p>Skript analyzuje záznamy ze zadaných souborů v daném
+pořadí.</p></li>
+<li><p>Formát souboru se záznamy je CSV, kde oddělovačem je znak čárky
+<code>,</code>. Celý soubor je v kódování ASCII. Formát je řádkový,
+každý <em>neprázdný</em> řádek (prázdné řádky jsou takové, které
+obsahují jen bílé znaky) odpovídá záznamu o jedné nákaze osoby ve tvaru
+(následující je hlavička CSV souboru)</p>
+<pre><code>id,datum,vek,pohlavi,kraj_nuts_kod,okres_lau_kod,nakaza_v_zahranici,nakaza_zeme_csu_kod,reportovano_khs</code></pre>
+<p>kde</p>
+<ul>
+<li><code>id</code> je identifikátor záznamu (řetězec neobsahující bílé
+znaky a znak čárky <code>,</code>),</li>
+<li><code>datum</code> je ve formátu <code>YYYY-MM-DD</code>,</li>
+<li><code>vek</code> je kladné celé číslo,</li>
+<li><code>pohlavi</code> je <code>M</code> (muž) nebo <code>Z</code>
+(žena),</li>
+<li><code>kraj_nuts_kod</code> je <a href="https://www.czso.cz/csu/rso/kraje_nuts3">kód kraje</a>, kde byla
+nákaza zjištěna,</li>
+<li><code>okres_lau_kod</code> je <a href="https://www.czso.cz/csu/rso/okresy_nuts4">kód okresu</a>, kde byla
+nákaza zjištěna,</li>
+<li><code>nakaza_v_zahranici</code> značí, zda zdroj nákazy byl v
+zahraničí (<code>1</code> značí, že zdroj nákazy byl v zahraničí,
+prázdné pole značí, že nebyl),</li>
+<li><code>nakaza_zeme_csu_kod</code> je <a href="https://www.czso.cz/csu/czso/ciselnik_zemi_-czem-">kód země</a>
+vzniku nákazy (pro nákazu vzniklou v zahraničí),</li>
+<li><code>reportovano_khs</code> značí, zda byla nákaza reportována
+krajské hygienické stanici.</li>
+</ul>
+<p>Příklad souboru se třemi záznamy:</p>
+<pre><code>id,datum,vek,pohlavi,kraj_nuts_kod,okres_lau_kod,nakaza_v_zahranici,nakaza_zeme_csu_kod,reportovano_khs
+6f4125cb-fb41-4fb0-a478-07b69ba106a4,2020-03-01,21,Z,CZ010,CZ0100,1,IT,1
+f6b08ff5-203d-4a3e-aab0-a5d39ac9ab9e,2020-03-11,32,M,CZ080,CZ0804,,,1
+b03dcf40-04cd-4f7b-a13d-767fc43c3013,2020-03-14,38,M,,,,,</code></pre>
+<ul>
+<li>První záznam z 1. března 2020 značí nákazu 21leté ženy v kraji
+“Hlavní město Praha” (kód <code>CZ010</code>), v okrese “Hlavní město
+Praha” (kód <code>CZ0100</code>). Žena byla nakažena v Itálii (kód
+<code>IT</code>) a nákaza byla reportována krajské hygienické
+stanici.</li>
+<li>Druhý záznam značí vnitrostátní nákazu 32letého muže v
+Moravskoslezském kraji (kód <code>CZ080</code>), v okrese Nový Jičín
+(kód <code>CZ0804</code>), zjištěnou 11. března 2020.</li>
+<li>Třetí záznam značí nákazu 38letého muže zjištěnou 14. března 2020, u
+níž nejsou k dispozici další informace.</li>
+</ul></li>
+<li><p>Skript žádný soubor nemodifikuje. Skript nepoužívá dočasné
+soubory.</p></li>
+<li><p>Záznamy ve vstupních souborech nemusí být uvedeny chronologicky a
+je-li na vstupu více souborů, jejich pořadí také nemusí být
+chronologické.</p></li>
+<li><p>Pokud není při použití přepínače <code>-s</code> uvedena šířka
+<code>WIDTH</code>, pak každý výskyt symbolu <code>#</code> v grafu
+odpovídá počtu nákaz (zaokrouhleno dolů) dle příkazu následujícím
+způsobem:</p>
+<ul>
+<li><code>gender</code> — 100 000</li>
+<li><code>age</code> — 10 000</li>
+<li><code>daily</code> — 500</li>
+<li><code>monthly</code> — 10 000</li>
+<li><code>yearly</code> — 100 000</li>
+<li><code>countries</code> — 100</li>
+<li><code>districts</code> — 1 000</li>
+<li><code>regions</code> — 10 000</li>
+</ul></li>
+<li><p>Při použití přepínače <code>-s</code> s uvedenou šířkou
+<code>WIDTH</code> je počet nákaz na mřížku upraven podle největšího
+počtu výskytů v řádku grafu. Řádek s největší hodnotou bude mít počet
+mřížek <code>WIDTH</code> a ostatní řádky budou mít proporcionální počet
+mřížek vzhledem k největší hodnotě. Při dělení zaokrouhlujte dolů. Tedy
+např. při <code>-s 6</code> a řádku s největší hodnotou 1234 bude řádek
+s touto hodnotou vypadat takto: <code>######</code>.</p></li>
+<li><p>Pořadí argumentů stačí uvažovat takové, že nejdřív budou všechny
+přepínače, pak (volitelně) příkaz a nakonec seznam vstupních souborů
+(lze tedy použít <code>getopts</code>).</p></li>
+<li><p>Předpokládejte, že vstupní soubory nemůžou mít jména odpovídající
+některému příkazu nebo přepínači.</p></li>
+<li><p>V případě uvedení přepínače <code>-h</code> se vždy pouze vypíše
+nápověda a skript skončí (tedy, pokud by za přepínačem následoval nějaký
+příkaz nebo soubor, neprovede se).</p></li>
+<li><p>V případě neexistující hodnoty atributu u příkazů
+<code>gender</code>, <code>age</code>, <code>daily</code>,
+<code>monthly</code>, <code>yearly</code>, <code>districts</code>,
+<code>regions</code> agregujte záznamy s neexistující hodnotou pod
+hodnotu <code>None</code>, kterou ve výpisech uvádějte jako
+poslední.</p></li>
+<li><p>Přepodkládejte, že je-li v záznamu uvedena hodnota pro nějaký
+atribut záznamu, pak je korektní (tj. není potřeba validovat vstup) s
+následujícími výjimkami:</p>
+<ul>
+<li>ve sloupci <code>datum</code> je očekáváno korektní datum ve formátu
+<code>YYYY-MM-DD</code>, které odpovídá skutečnému dni (tedy, např.,
+<code>yesterday</code> nebo <code>2020-02-30</code> jsou nevalidní
+hodnoty).</li>
+<li>ve sloupci <code>vek</code> je očekáváno nezáporné celé číslo (tedy,
+např., <code>-42</code>, <code>18.5</code> nebo <code>1e10</code> jsou
+nevalidní hodnoty).</li>
+</ul>
+<p>V případě detekování záznamu porušujícího některou z podmínek
+uvedených výše vypište chybu na chybový výstup a pokračujte ve
+zpracovávání dále (chybějící hodnota data/věku není porušením). Formát
+pro chybu je následující:</p>
+<pre><code>Invalid date: 6f4125cb-fb41-4fb0-a478-07b69ba106a4,2020-04-31,21,Z,CZ010,CZ0100,1,IT,1
+Invalid age: 033fb060-2a10-42ce-80c1-72c2e39b1981,2020-03-05,dvacet,Z,CZ042,CZ0421,,,1</code></pre>
+<p>Kontrolu validity záznamů provádějte <strong>před</strong> případným
+filtrováním.</p></li>
+<li><p>U příkazu <code>age</code> pracujte s následujícími intervaly a
+zarovnáním:</p>
+<pre><code>0-5   : 
+6-15  :
+16-25 :
+26-35 :
+36-45 :
+46-55 :
+56-65 :
+66-75 :
+76-85 :
+86-95 :
+96-105:
+&gt;105  :     </code></pre></li>
+<li><p>Implementace přepínačů <code>-d</code> a <code>-r</code> je
+nepovinná; korektní implementace může vynahradit jiné bodové
+ztráty.</p></li>
+<li><p>U příkazů <code>gender</code>, <code>daily</code>,
+<code>monthly</code>, <code>yearly</code>, <code>countries</code>,
+<code>districts</code>, <code>regions</code> (bez přepínačů
+<code>-d</code> a <code>-r</code>) stačí vypisovat výstup ve formátu
+<code>hodnota: pocet</code> (bez mezery před dvojtečkou a s právě jednou
+mezerou za dvojtečkou), případně (pro přepínač <code>-s</code>)
+<code>hodnota: ###...#</code>. U příkazu <code>age</code> je zarovnání
+specifikováno výše.</p>
+<p>Pro nepovinné přepínače <code>-r</code> a <code>-d</code> je
+dvojtečka na pozici o jedna větší, než je počet symbolů nejdelší
+hodnoty, tj. např.</p>
+<pre><code>hodnota      : 42
+delsi_hodnota: 1337</code></pre></li>
+<li><p>Příkaz <code>countries</code> nevypisuje počet nákaz v České
+republice (kód <code>CZ</code> nebo chybějící hodnota).</p></li>
+<li><p>Hodnoty ve sloupcích <code>nakaza_v_zahranici</code> a
+<code>reportovano_khs</code> ignorujte (tj. například u příkazu
+<code>countries</code> není třeba brát <code>nakaza_v_zahranici</code>
+do úvahy).</p></li>
+<li><p>Záznamy nemusí nutně mít patřičný počet sloupců. V případě
+chybějícího sloupce postupujte stejně, jako kdyby v něm chyběla hodnota
+(pokud záznamu chybí <code>N</code> polí, znamená, to, že chybí hodnota
+<code>N</code> nejpravějších sloupců, tedy, např., pokud záznam obsahuje
+jen 7 polí, pak chybí hodnoty sloupců <code>nakaza_zeme_csu_kod</code> a
+<code>reportovano_khs</code>).</p></li>
+<li><p>Nekontrolujte, zda obsahy sloupců <code>kraj_nuts_kod</code>,
+<code>okres_lau_kod</code> a <code>nakaza_zeme_csu_kod</code> odpovídají
+daným číselníkům. V případě implementace rozšíření <code>-d</code> a
+<code>-r</code> při použití hodnoty nedefinované v souboru s definicemi
+okresů/krajů vypisujte dané záznamy na chybový výstup v následujícím
+formátu:</p>
+<pre><code>Invalid value: 07958a56-6867-4245-b042-29c291c20359,2020-08-16,5,M,CZ099,CZ0999,,,1</code></pre></li>
+</ol>
+<h1 id="implementační-detaily">Implementační detaily</h1>
+<ol type="1">
+<li><p>Skript by měl mít v celém běhu nastaveno
+<code>POSIXLY_CORRECT=yes</code>.</p></li>
+<li><p>Skript by měl běžet na všech běžných shellech (<code>dash</code>,
+<code>ksh</code>, <code>bash</code>). Pokud použijete vlastnost
+specifickou pro nějaký shell, uveďte to pomocí direktivy interpretu na
+prvním řádku souboru, např. <code>#!/bin/bash</code> nebo
+<code>#!/usr/bin/env bash</code> pro <code>bash</code>. Můžete použít
+GNU rozšíření pro <code>sed</code> či <code>awk</code>. Jazyky Perl,
+Python, Ruby, atd. povoleny nejsou.</p>
+<p><strong>UPOZORNĚNÍ:</strong> některé servery, např.
+<code>merlin.fit.vutbr.cz</code>, mají symlink
+<code>/bin/sh -&gt; bash</code>. Ověřte si proto, že skript skutečně
+testujete daným shellem. Doporučuji ověřit správnou funkčnost pomocí
+virtuálního stroje níže.</p></li>
+<li><p>Skript musí běžet na běžně dostupných OS GNU/Linux, BSD a MacOS.
+Studentům je k dispozici virtuální stroj s obrazem ke stažení zde: <a href="http://www.fit.vutbr.cz/~lengal/public/trusty.ova">http://www.fit.vutbr.cz/~lengal/public/trusty.ova</a>
+(pro VirtualBox, login: <code>trusty</code> / heslo:
+<code>trusty</code>), na kterém lze ověřit správnou funkčnost
+projektu.</p></li>
+<li><p>Skript nesmí používat dočasné soubory. Povoleny jsou však dočasné
+soubory nepřímo tvořené jinými příkazy (např. příkazem
+<code>sed -i</code>).</p></li>
+</ol>
+<h1 id="odevzdání-projektu">Odevzdání projektu</h1>
+<p>Odevzdávejte pouze skript <code>corona</code> (nebalte ho do žádného
+archivu). Odevzdejte do IS, termín Projekt 1.</p>
+<h1 id="rady">Rady</h1>
+<ul>
+<li>Dobrá dekompozice problému na podproblémy Vám může značně ulehčit
+práci a předejít chybám.</li>
+<li>Naučte se <em>dobře</em> používat <strong>funkce</strong> v shellu
+(uvědomte si, že spousta funkcionality, např. pro výpisy statistik,
+histogram, atd., je obdobná).</li>
+</ul>
+<h1 id="návratová-hodnota">Návratová hodnota</h1>
+<ul>
+<li>Skript vrací úspěch v případě úspěšné operace. Interní chyba skriptu
+nebo chybné argumenty budou doprovázeny chybovým hlášením na stderr a
+neúspěšným návratovým kódem.</li>
+</ul>
+<h1 id="příklady-použití">Příklady použití</h1>
+<ul>
+<li>Ukázky záznamů o nakažených jsou dostupné na oficiálních stránkách
+MZČR: <a href="https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/osoby.csv">https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19/osoby.csv</a>
+(pozor, má cca 250 MiB). Na <a href="https://onemocneni-aktualne.mzcr.cz/api/v2/covid-19">této
+stránce</a> jsou dispozici další datové sady včetně popisů jejich
+schémat.</li>
+<li>Vzorové záznamy, na kterých jsou ukázány příklady použití níže, jsou
+k dispozici na <a href="https://pajda.fit.vutbr.cz/ios/ios-22-1-inputs/-/tree/main/">této
+stránce</a>. Jsou to konkrétně následující:</li>
+<li>Kopie souboru <code>osoby.csv</code> z 21. února 2022 <a href="https://pajda.fit.vutbr.cz/ios/ios-22-1-inputs/-/raw/main/data/osoby.csv">zde</a>
+(cca 250 MiB).</li>
+<li>Zkrácená verze verze <code>osoby-short.csv</code> <a href="https://pajda.fit.vutbr.cz/ios/ios-22-1-inputs/-/raw/main/data/osoby-short.csv">zde</a>
+(cca 150 KiB).</li>
+<li>Podmnožina záznamů za leden 2022 rozdělených dle jednotlivých dnů je
+k dispozici <a href="https://pajda.fit.vutbr.cz/ios/ios-22-1-inputs/-/tree/main/data/infected-jan22">zde</a>.</li>
+<li>Komprimované verze souborů <code>osoby.csv</code> a
+<code>osoby-short.csv</code> (<a href="https://pajda.fit.vutbr.cz/ios/ios-22-1-inputs/-/raw/main/data/osoby.csv.gz"><code>osoby.csv.gz</code></a>,
+<a href="https://pajda.fit.vutbr.cz/ios/ios-22-1-inputs/-/raw/main/data/osoby.csv.bz2"><code>osoby.csv.bz2</code></a>,
+<a href="https://pajda.fit.vutbr.cz/ios/ios-22-1-inputs/-/raw/main/data/osoby-short.csv.gz"><code>osoby-short.csv.gz</code></a>
+a <a href="https://pajda.fit.vutbr.cz/ios/ios-22-1-inputs/-/raw/main/data/osoby-short.csv.bz2"><code>osoby-short.csv.bz2</code></a>).</li>
+<li>Soubor <code>osoby2.csv</code> s ukázkami těžších záznamů, které je
+potřeba umět korektně zpracovat, je <a href="https://pajda.fit.vutbr.cz/ios/ios-22-1-inputs/-/raw/main/data/osoby2.csv">zde</a>.</li>
+</ul>
+<p>Příklady:</p>
+<pre><code>$ cat osoby.csv | head -n 5 | ./corona
+id,datum,vek,pohlavi,kraj_nuts_kod,okres_lau_kod,nakaza_v_zahranici,nakaza_zeme_csu_kod,reportovano_khs
+6f4125cb-fb41-4fb0-a478-07b69ba106a4,2020-03-01,21,Z,CZ010,CZ0100,1,IT,1
+5841443b-7df4-4af9-acab-75ca47010ec3,2020-03-01,43,M,CZ042,CZ0421,1,IT,1
+5cdb7ece-97a2-4336-9715-59dc70a48a2c,2020-03-01,67,M,CZ010,CZ0100,1,IT,1
+d345e0e2-9056-4d3f-b790-485b12831180,2020-03-03,21,Z,CZ010,CZ0100,,,</code></pre>
+<pre><code>$ ./corona infected osoby.csv
+3510360</code></pre>
+<pre><code>$ ./corona infected infected-jan22/infected-22-01-*.csv
+560894</code></pre>
+<pre><code>$ ./corona merge infected-jan22/infected-22-01-*.csv
+id,datum,vek,pohlavi,kraj_nuts_kod,okres_lau_kod,nakaza_v_zahranici,nakaza_zeme_csu_kod,reportovano_khs
+741d72a4-2b6e-4703-872d-928748ca0ade,2022-01-01,3,Z,CZ020,CZ0203,,,1
+f39754b8-5e7f-44fd-8b65-e4e7e3b89521,2022-01-01,52,Z,CZ052,CZ0522,,,1
+...
+1a27f58f-8950-40c5-89fa-3795f4a906f4,2022-01-31,19,Z,CZ063,CZ0635,,,1
+9aebc069-89d5-4ba0-96c5-aefa1f2c6746,2022-01-31,19,M,CZ064,CZ0642,,,1</code></pre>
+<pre><code>$ cat osoby.csv | ./corona gender
+M: 1703679
+Z: 1806681</code></pre>
+<pre><code>$ curl -s 'https://pajda.fit.vutbr.cz/ios/ios-22-1-inputs/-/raw/main/data/osoby.csv' | ./corona -a 2021-07-19 infected
+1835517</code></pre>
+<pre><code>$ cat osoby.csv | ./corona daily
+2020-03-01: 3
+2020-03-03: 2
+2020-03-04: 1
+...
+2022-02-19: 8218
+2022-02-20: 4267</code></pre>
+<pre><code>$ cat osoby.csv | ./corona monthly
+2020-03: 3316
+2020-04: 4385
+2020-05: 1615
+...
+2022-01: 560894
+2022-02: 465810</code></pre>
+<pre><code>$ cat osoby.csv | ./corona yearly
+2020: 732808
+2021: 1750848
+2022: 1026704</code></pre>
+<pre><code>$ ./corona countries osoby.csv
+99: 1
+AD: 1
+AE: 444
+AF: 13
+...
+ZA: 36
+ZM: 2
+ZW: 1</code></pre>
+<p>(kód země <code>99</code> na prvním řádku je chyba v datové sadě;
+neřešte ji)</p>
+<pre><code>$ ./corona -g M osoby.csv | head -n 6
+id,datum,vek,pohlavi,kraj_nuts_kod,okres_lau_kod,nakaza_v_zahranici,nakaza_zeme_csu_kod,reportovano_khs
+5841443b-7df4-4af9-acab-75ca47010ec3,2020-03-01,43,M,CZ042,CZ0421,1,IT,1
+5cdb7ece-97a2-4336-9715-59dc70a48a2c,2020-03-01,67,M,CZ010,CZ0100,1,IT,1
+496a049f-656e-4274-a51f-72aa92d01f33,2020-03-05,49,M,CZ042,CZ0421,1,IT,1
+815a2219-2735-46ae-8b14-658459481b2f,2020-03-06,47,M,CZ010,CZ0100,1,IT,1
+9f78dd0d-2e71-4d37-89a2-665b44b2a607,2020-03-06,44,M,CZ010,CZ0100,1,IT,1</code></pre>
+<pre><code>$ cat /dev/null | ./corona
+id,datum,vek,pohlavi,kraj_nuts_kod,okres_lau_kod,nakaza_v_zahranici,nakaza_zeme_csu_kod,reportovano_khs</code></pre>
+<pre><code>$ ./corona -s daily osoby.csv
+2020-03-01:
+2020-03-03:
+2020-03-04:
+...
+2022-02-19: ################
+2022-02-20: ########</code></pre>
+<pre><code>$ ./corona -s monthly osoby.csv
+2020-03:
+2020-04:
+2020-05:
+...
+2022-01: ########################################################
+2022-02: ##############################################</code></pre>
+<pre><code>$ ./corona -s 20 yearly osoby.csv
+2020: ########
+2021: ####################
+2022: ###########</code></pre>
+<pre><code>$ ./corona osoby.csv.gz | head -n 5
+id,datum,vek,pohlavi,kraj_nuts_kod,okres_lau_kod,nakaza_v_zahranici,nakaza_zeme_csu_kod,reportovano_khs
+6f4125cb-fb41-4fb0-a478-07b69ba106a4,2020-03-01,21,Z,CZ010,CZ0100,1,IT,1
+5841443b-7df4-4af9-acab-75ca47010ec3,2020-03-01,43,M,CZ042,CZ0421,1,IT,1
+5cdb7ece-97a2-4336-9715-59dc70a48a2c,2020-03-01,67,M,CZ010,CZ0100,1,IT,1
+d345e0e2-9056-4d3f-b790-485b12831180,2020-03-03,21,Z,CZ010,CZ0100,,,</code></pre>
+<pre><code>$ ./corona osoby.csv.bz2 | head -n 5
+id,datum,vek,pohlavi,kraj_nuts_kod,okres_lau_kod,nakaza_v_zahranici,nakaza_zeme_csu_kod,reportovano_khs
+6f4125cb-fb41-4fb0-a478-07b69ba106a4,2020-03-01,21,Z,CZ010,CZ0100,1,IT,1
+5841443b-7df4-4af9-acab-75ca47010ec3,2020-03-01,43,M,CZ042,CZ0421,1,IT,1
+5cdb7ece-97a2-4336-9715-59dc70a48a2c,2020-03-01,67,M,CZ010,CZ0100,1,IT,1
+d345e0e2-9056-4d3f-b790-485b12831180,2020-03-03,21,Z,CZ010,CZ0100,,,</code></pre>
+<pre><code>$ ./corona districts osoby.csv
+CZ0100: 448252
+CZ0201: 34423
+CZ0202: 33545
+CZ0203: 54368
+CZ0204: 36166
+...
+CZ0806: 103556
+None: 2959</code></pre>
+<pre><code>$ ./corona regions osoby.csv
+CZ010: 448252
+CZ020: 482138
+...
+CZ080: 387509
+None: 2926</code></pre>
+<pre><code>$ ./corona age osoby.csv
+0-5   : 118107
+6-15  : 511868
+16-25 : 410980
+26-35 : 511672
+36-45 : 649751
+46-55 : 570064
+56-65 : 359275
+66-75 : 225485
+76-85 : 110360
+86-95 : 39405
+96-105: 2651
+&gt;105  : 302
+None  : 440</code></pre>
+<pre><code>$ ./corona infected osoby2.csv
+9
+Invalid date: 0dc57759-d153-45c2-8d14-fb92fc028060,2020-15-03,62,Z,CZ010,CZ0100,,,1
+Invalid age: 5b0a9692-a72a-4f34-a014-83ae08a79f20,2020-03-10,3.1415,Z,CZ071,CZ0712,1,IT,1</code></pre>
+<pre><code>$ ./corona daily osoby2.csv
+2020-03-01: 3
+2020-03-03: 2
+2020-03-04: 1
+2020-03-05: 3
+Invalid date: 0dc57759-d153-45c2-8d14-fb92fc028060,2020-15-03,62,Z,CZ010,CZ0100,,,1
+Invalid age: 5b0a9692-a72a-4f34-a014-83ae08a79f20,2020-03-10,3.1415,Z,CZ071,CZ0712,1,IT,1</code></pre>
+<h2 id="rozšíření">Rozšíření</h2>
+<pre><code>$ ./corona -d okresy.csv districts osoby.csv
+Benesov         : 34423
+Beroun          : 33545
+Blansko         : 34374
+Brno-mesto      : 123692
+...
+Zdar nad Sazavou: 37928
+Zlin            : 69348
+Znojmo          : 32733
+None            : 2959</code></pre>
+<pre><code>$ ./corona -r kraje.csv regions osoby.csv
+Hlavni mesto Praha  : 448252
+Jihocesky kraj      : 206288
+Jihomoravsky kraj   : 374972
+Karlovarsky kraj    : 77709
+Kraj Vysocina       : 158169
+Kralovehradecky kraj: 190181
+Liberecky kraj      : 148988
+Moravskoslezsky kraj: 387509
+Olomoucky kraj      : 208593
+Pardubicky kraj     : 183208
+Plzensky kraj       : 193696
+Stredocesky kraj    : 482138
+Ustecky kraj        : 248821
+Zlinsky kraj        : 198910
+None                : 2926</code></pre></div>
+            <div class="d-none d-xl-block col-xl-2 bd-toc">
+               <ul class="section-nav">
+                  <li class="toc-entry"><ul>
+<li><a href="file:///Users/ondra/teaching/ios/ios-22-1/zadani_reseni/README.html#popis-%C3%BAlohy">Popis úlohy</a></li>
+<li><a href="file:///Users/ondra/teaching/ios/ios-22-1/zadani_reseni/README.html#specifikace-rozhran%C3%AD-skriptu">Specifikace rozhraní
+skriptu</a></li>
+<li><a href="file:///Users/ondra/teaching/ios/ios-22-1/zadani_reseni/README.html#popis">Popis</a></li>
+<li><a href="file:///Users/ondra/teaching/ios/ios-22-1/zadani_reseni/README.html#podrobn%C3%A9-po%C5%BEadavky">Podrobné požadavky</a></li>
+<li><a href="file:///Users/ondra/teaching/ios/ios-22-1/zadani_reseni/README.html#implementa%C4%8Dn%C3%AD-detaily">Implementační detaily</a></li>
+<li><a href="file:///Users/ondra/teaching/ios/ios-22-1/zadani_reseni/README.html#odevzd%C3%A1n%C3%AD-projektu">Odevzdání projektu</a></li>
+<li><a href="file:///Users/ondra/teaching/ios/ios-22-1/zadani_reseni/README.html#rady">Rady</a></li>
+<li><a href="file:///Users/ondra/teaching/ios/ios-22-1/zadani_reseni/README.html#n%C3%A1vratov%C3%A1-hodnota">Návratová hodnota</a></li>
+<li><a href="file:///Users/ondra/teaching/ios/ios-22-1/zadani_reseni/README.html#p%C5%99%C3%ADklady-pou%C5%BEit%C3%AD">Příklady použití</a>
+<ul>
+<li><a href="file:///Users/ondra/teaching/ios/ios-22-1/zadani_reseni/README.html#roz%C5%A1%C3%AD%C5%99en%C3%AD">Rozšíření</a></li>
+</ul></li>
+</ul></li>
+               </ul>
+            </div>
+         </div>
+               </div>
+            <!-- Add comment hosting service here -->
+            <!-- Footer -->
+            <footer class="footer text-muted">
+               <div align="center">
+                  <!-- Please keep the following line -->
+                  Built with <a href="https://www.pandoc.org/" target="_blank" rel="noopener">Pandoc</a> 
+                  using <a href="https://github.com/ashki23/pandoc-bootstrap" target="_blank" rel="noopener">pandoc-bootstrap</a> theme
+                  <br>
+               </div>
+            </footer>
+            <!-- Add global site tag (gtag.js) and site analytics here -->
+            <!-- JS, Popper.js, and jQuery -->
+      <script src="./ios22-projekt-1_files/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="./ios22-projekt-1_files/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="./ios22-projekt-1_files/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <!-- Mathjax -->
+      <script src="./ios22-projekt-1_files/polyfill.min.js"></script>
+      <script id="MathJax-script" async="" src="./ios22-projekt-1_files/tex-mml-chtml.js"></script>
+      <script>
+         /* Bootstrap styles to tables */
+         function bootstrapStylePandocTables() {
+         $('tr.header').parent('thead').parent('table').addClass('table table-condensed'); }
+         $(document).ready(function () { bootstrapStylePandocTables(); });
+         /* Adjust the height when click the toc */
+         var shiftWindow = function() { scrollBy(0, -60) };
+         window.addEventListener("hashchange", shiftWindow);
+         function load() { if (window.location.hash) shiftWindow(); }
+      </script>
+   
+
+</body></html>
